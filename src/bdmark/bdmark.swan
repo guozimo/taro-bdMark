@@ -1,0 +1,19 @@
+<view class="wemark_wrapper">
+<block s-if="{{type === 'bdmark'}}" s-for="{{parsedData}}" s-key="blockIndex" s-for-index="blockIndex" s-for-item="renderBlock">
+	<view class="wemark_block_{{renderBlock.type}}">
+		<block s-if="{{renderBlock.isArray}}" s-for="{{renderBlock.content}}" s-key="inlineIndex" s-for-index="inlineIndex" s-for-item="renderInline">
+			<text class="wemark_inline_{{renderInline.type}}" s-if="{{renderInline.type === 'text' || renderInline.type === 'code' || renderInline.type === 'strong' || renderInline.type === 'strong_em' || renderInline.type === 'deleted' || renderInline.type === 'em' || renderInline.type === 'table_th' || renderInline.type === 'table_td'}}">{{renderInline.content}}</text>
+			<!-- 代码高亮 -->
+			<text class="wemark_inline_code_{{renderInline.type}}" s-if="{{renderInline.type&&renderBlock.highlight}}">{{renderInline.content}}</text>
+			<text class="wemark_inline_code_text" s-if="{{!renderInline.type}}">{{renderInline}}</text>
+			<navigator class="wemark_inline_link" url="{{renderInline.data.href}}" s-if="{{renderInline.type === 'link'}}">{{renderInline.content}}</navigator>
+			<image mode="widthFix" class="wemark_inline_image" src="{{renderInline.src}}" s-if="{{renderInline.type === 'image'}}"></image>
+		</block>
+		<block s-if="{{!renderBlock.isArray}}">
+			<view s-if="{{renderBlock.type === 'code'}}">{{renderBlock.content}}</view>
+			<video s-if="{{renderBlock.type == 'video'}}" class="wemark_block_video" src="{{renderBlock.src}}" poster="{{renderBlock.poster}}" controls></video>
+		</block>
+	</view>
+</block>
+<rich-text class="wemark_wrapper_richtext" s-if="{{type === 'rich-text'}}" nodes="{{richTextNodes}}"></rich-text>
+</view>
