@@ -1,5 +1,5 @@
 const config = {
-  projectName: 'taro-bdMark',
+  projectName: 'taro-bdmark',
   date: '2019-03-21',
   designWidth: 750,
   deviceRatio: {

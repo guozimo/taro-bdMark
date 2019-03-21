@@ -1,7 +1,7 @@
 {
-  "name": "taro-bdMark",
+  "name": "taro-bdmark",
   "version": "1.0.0",
-  "description": "taro-bdMark demo",
+  "description": "taro-bdmark demo",
   "scripts": {
     "build:weapp": "taro build --type weapp",
     "build:swan": "taro build --type swan",
