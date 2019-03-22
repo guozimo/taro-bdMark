@@ -1,7 +1,7 @@
-# 百度小程序 微信小程序 支付宝小程序 H5 react-native多端编译支持 （seed_taroapp）
+# 百度小程序 微信小程序 支付宝小程序 H5 react-native多端编译支持 （taro-bdmark）
 ------------
 
-* 项目依赖React、jsx、Mobx, 工程构建基于[taro](https://taro.aotu.io/)
+* 项目依赖React、jsx, 工程构建基于[taro](https://taro.aotu.io/)
 
 ### 快速开始
 * `npm install 或者cnpm i `         安装所有依赖包
