@@ -23,6 +23,7 @@ taro-bdmark支持taro框架下的百度小程序md渲染。
 #### 使用教程
 
 1、npm i taro-bdmark
+
 2、在页面的配置文件中引用bdmark组件
 
 ```
@@ -32,13 +33,15 @@ taro-bdmark支持taro框架下的百度小程序md渲染。
 	}
 }
 ```
-（请使用绝对路径）
+
 3、swan中使用：
 ```
 <bdmark md="{{md}}" link highlight type="bdmark"></bdmark>
 
 ```
-4、npm run dev:swan
+4、快速开始:
+
+npm run dev:swan
 
 
  参数说明：
