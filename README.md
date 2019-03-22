@@ -1,4 +1,4 @@
-# 百度小程序 微信小程序 支付宝小程序 H5 react-native多端编译支持 （taro-bdmark）
+# 百度小程序 taro框架 markdown解析器 （taro-bdmark）----author:guozimo
 ------------
 
 * 项目依赖React、jsx, 工程构建基于[taro](https://taro.aotu.io/)
