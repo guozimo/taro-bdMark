@@ -1,7 +1,7 @@
 #### taro-bdmark：百度小程序版本（taro框架）markdown解析器
-![输入图片说明](https://github.com/guozimo/publish/blob/gh-pages/img/md1.png "011.jpg")
-![输入图片说明](https://github.com/guozimo/publish/blob/gh-pages/img/md2.png "012.jpg")
-![输入图片说明](https://github.com/guozimo/publish/blob/gh-pages/img/md3.png "013.jpg")
+![输入图片说明](https://github.com/guozimo/publish/blob/gh-pages/img/md1.png)
+![输入图片说明](https://github.com/guozimo/publish/blob/gh-pages/img/md2.png)
+![输入图片说明](https://github.com/guozimo/publish/blob/gh-pages/img/md3.png)
 
 #### 来源
 修改自TooBug的wemark,由于不支持百度小程序使用，所以改造了一下，原wemark作者github地址：https://github.com/TooBug/wemark
@@ -33,8 +33,11 @@ taro-bdmark支持taro框架下的百度小程序md渲染。
 }
 ```
 （请使用绝对路径）
+3、swan中使用：
+```
+<bdmark md="{{md}}" link highlight type="bdmark"></bdmark>
 
-3、swan中使用：<bdmark md="{{md}}" link highlight type="bdmark"></bdmark>
+```
 4、npm run dev:swan
 
 
@@ -44,8 +47,6 @@ taro-bdmark支持taro框架下的百度小程序md渲染。
 - link，是否解析链接，如果解析，会使用小程序navigator组件展现，可在小程序内跳转，默认为false；
 - highlight，是否对代码进行高亮处理，默认为false；
 - type，渲染方式，bdmark会使用bdmark的数据结构和模板进行渲染，rich-text会使用小程序内置的rich-text组件进行渲染（不支持链接跳转、视频）。
-- 全局安装npm install -g @tarojs/cli  此前安装过cli的 需要使用更新命令 taro update self
-
 > 注：代码高亮会使标签数量和解析后的数据量增大，不排除产生渲染性能问题，请根据实际需要酌情使用。
 
 #### 不足之处
