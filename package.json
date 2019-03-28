@@ -1,5 +1,5 @@
 {"name": "taro-bdmark",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "用于在百度小程序中渲染Markdown文本 bdmark可以实现在百度小程序下渲染Markdown内容，支持图片、表格在内的大部分Markdown特性，taro-bdmark支持taro框架下的百度小程序md渲染。",
   "scripts": {
     "build:weapp": "taro build --type weapp",
