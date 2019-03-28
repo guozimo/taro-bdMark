@@ -7,7 +7,7 @@
 			<text class="wemark_inline_code_{{renderInline.type}}" s-if="{{renderInline.type&&renderBlock.highlight}}">{{renderInline.content}}</text>
 			<text class="wemark_inline_code_text" s-if="{{!renderInline.type}}">{{renderInline}}</text>
 			<navigator class="wemark_inline_link" url="{{renderInline.data.href}}" s-if="{{renderInline.type === 'link'}}">{{renderInline.content}}</navigator>
-			<image mode="widthFix" class="wemark_inline_image" src="{{renderInline.src}}" s-if="{{renderInline.type === 'image'}}"></image>
+			<image mode="widthFix" class="wemark_inline_image" src="{{renderInline.src}}" s-if="{{renderInline.type === 'image'}}" bindtap='previewImg' data-item='{{renderInline.src}}'></image>
 		</block>
 		<block s-if="{{!renderBlock.isArray}}">
 			<view s-if="{{renderBlock.type === 'code'}}">{{renderBlock.content}}</view>

@@ -47,6 +47,14 @@ Component({
 				}
 
             }
+        },
+        previewImg(event){
+        // console.log('传入的参数',event.currentTarget.dataset.item)
+          if(event.currentTarget.dataset.item) {
+            swan.previewImage({
+              urls:[event.currentTarget.dataset.item]
+            })
+          }
         }
     }
 });
